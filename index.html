@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AstraVale — Astrophotography Workshop</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="loading-logo">
+      <img src="AstraVale without BG.png" alt="AstraVale Logo" />
+    </div>
+    <div class="loading-bar-track">
+      <div class="loading-bar-fill"></div>
+    </div>
+    <div class="loading-text">Calibrating Optics</div>
+  </div>
+
+  <!-- Three.js Canvas -->
+  <canvas id="starfield-canvas"></canvas>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-brand">
+        <img src="AstraVale without BG.png" alt="AstraVale" />
+        <span class="nav-brand-text">AstraVale</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#curriculum">Curriculum</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#best-members">Best Members</a></li>
+        <li><a href="#enroll" class="nav-cta">Enroll Now</a></li>
+      </ul>
+      <div class="nav-hamburger" id="nav-hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-cosmic-orb orb-1"></div>
+    <div class="hero-cosmic-orb orb-2"></div>
+    <div class="hero-cosmic-orb orb-3"></div>
+    
+    <div class="hero-content">
+      <div class="hero-badge" style="display: none;">
+        <!-- Removed per user request -->
+      </div>
+      <h1 class="hero-title">
+        <span class="line"><span class="line-inner">Master the Art of</span></span>
+        <span class="line"><span class="line-inner text-gradient">Astrophotography</span></span>
+      </h1>
+      <p class="hero-subtitle">
+        Join AstraVale and learn how to capture the cosmos. From camera fundamentals to deep sky imaging, unlock the secrets of the night sky.
+      </p>
+      <div class="hero-buttons">
+        <a href="#enroll" class="btn-cosmic"><span>Enroll Now</span></a>
+        <a href="#curriculum" class="btn-ghost">View Curriculum</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-num" data-counter="80" data-suffix="">0</div>
+          <div class="hero-stat-label">Participants</div>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <div class="hero-stat-num" data-counter="87" data-suffix="">0</div>
+          <div class="hero-stat-label">Observation Hours</div>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <div class="hero-stat-num" data-counter="6" data-suffix="">0</div>
+          <div class="hero-stat-label">Core Modules</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Curriculum -->
+  <section id="curriculum">
+    <div class="section-container">
+      <div class="section-header">
+        <div class="section-tag">Curriculum</div>
+        <h2 class="section-title">Your Journey to the Stars</h2>
+        <p class="section-subtitle">A structured learning path designed to take you from beginner settings to professional image processing.</p>
+      </div>
+      
+      <div class="timeline-wrapper">
+        <div class="timeline-line"></div>
+        <div class="timeline-progress"></div>
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"><div class="dot-ring"></div></div>
+          <div class="timeline-card">
+            <div class="timeline-num">Module 01</div>
+            <div class="timeline-icon">
+              <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+            </div>
+            <h3>Camera Fundamentals</h3>
+            <p>Mastering manual settings for night work. Understand ISO, aperture, exposure time, and focusing in the dark.</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"><div class="dot-ring"></div></div>
+          <div class="timeline-card">
+            <div class="timeline-num">Module 02</div>
+            <div class="timeline-icon">
+              <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </div>
+            <h3>Night Sky Planning</h3>
+            <p>Using apps, charts, and weather data to plan your observation sessions and target selection.</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"><div class="dot-ring"></div></div>
+          <div class="timeline-card">
+            <div class="timeline-num">Module 03</div>
+            <div class="timeline-icon">
+              <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </div>
+            <h3>Tracking & Mounts</h3>
+            <p>Setting up equatorial mounts, polar alignment, and understanding guiding for long exposures.</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"><div class="dot-ring"></div></div>
+          <div class="timeline-card">
+            <div class="timeline-num">Module 04</div>
+            <div class="timeline-icon">
+              <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <h3>Deep Sky Imaging</h3>
+            <p>Techniques for capturing faint objects like nebulae, galaxies, and globular star clusters.</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"><div class="dot-ring"></div></div>
+          <div class="timeline-card">
+            <div class="timeline-num">Module 05</div>
+            <div class="timeline-icon">
+              <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+            </div>
+            <h3>Image Processing</h3>
+            <p>Stacking frames, stretching histograms, color calibration, and advanced workflows in PixInsight/Photoshop.</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"><div class="dot-ring"></div></div>
+          <div class="timeline-card">
+            <div class="timeline-num">Module 06</div>
+            <div class="timeline-icon">
+              <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            </div>
+            <h3>Portfolio Development</h3>
+            <p>Finalizing your images, building a professional astrophotography portfolio, and sharing your work.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features">
+    <div class="section-container">
+      <div class="section-header">
+        <div class="section-tag">Skills</div>
+        <h2 class="section-title">What You'll Master</h2>
+        <p class="section-subtitle">Acquire the technical and creative skills required for stunning astrophotography.</p>
+      </div>
+      
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon blue">
+             <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
+          </div>
+          <h3>Camera Settings</h3>
+          <p>Optimize your ISO, aperture, and shutter speed for crisp, low-noise nighttime captures.</p>
+          <div class="feature-tag essential">Essential</div>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon purple">
+             <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+          </div>
+          <h3>Image Stacking</h3>
+          <p>Combine multiple exposures to drastically increase the signal-to-noise ratio of your images.</p>
+          <div class="feature-tag technical">Technical</div>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon cyan">
+             <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+          </div>
+          <h3>Image Processing</h3>
+          <p>Bring out the hidden details in your raw data using industry-standard processing software.</p>
+          <div class="feature-tag advanced">Advanced</div>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon rose">
+             <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </div>
+          <h3>Deep Sky Imaging</h3>
+          <p>Learn how to track the night sky to capture long-exposure images of distant galaxies and nebulae.</p>
+          <div class="feature-tag advanced">Advanced</div>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon gold">
+             <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><ellipse cx="12" cy="12" rx="10" ry="3" transform="rotate(30 12 12)"></ellipse></svg>
+          </div>
+          <h3>Planetary Imaging</h3>
+          <p>Use high-frame-rate video techniques to capture stunning details on Jupiter, Saturn, and the Moon.</p>
+          <div class="feature-tag creative">Creative</div>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon blue">
+             <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
+          </div>
+          <h3>Color Calibration</h3>
+          <p>Ensure your celestial images display scientifically accurate and visually pleasing colors.</p>
+          <div class="feature-tag technical">Technical</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery">
+    <div class="section-container">
+      <div class="section-header">
+        <div class="section-tag">Gallery</div>
+        <h2 class="section-title">Student Portfolio</h2>
+        <p class="section-subtitle">A showcase of the incredible astrophotography captured by our workshop participants.</p>
+      </div>
+      
+      <div class="gallery-grid">
+        <div class="gallery-slot span-row-2">
+          <img src="photo_1_2026-06-15_13-25-43.jpg" alt="Milky Way over Structure" />
+          <div class="gallery-overlay"><span>Milky Way over Structure</span></div>
+        </div>
+        <div class="gallery-slot span-row-2">
+          <img src="photo_2_2026-06-15_13-25-43.jpg" alt="Lunar Surface" />
+          <div class="gallery-overlay"><span>Lunar Surface</span></div>
+        </div>
+        <div class="gallery-slot span-row-2">
+          <img src="photo_3_2026-06-15_13-25-43.jpg" alt="Pleiades Star Cluster" />
+          <div class="gallery-overlay"><span>Pleiades Star Cluster</span></div>
+        </div>
+        <div class="gallery-slot span-col-2">
+          <img src="photo_4_2026-06-15_13-25-43.jpg" alt="Night Sky from the Rooftop" />
+          <div class="gallery-overlay"><span>Night Sky from the Rooftop</span></div>
+        </div>
+        <div class="gallery-slot span-col-2">
+          <img src="photo_5_2026-06-15_13-25-43.jpg" alt="Twilight Cityscape & Planets" />
+          <div class="gallery-overlay"><span>Twilight Cityscape & Planets</span></div>
+        </div>
+        <div class="gallery-slot span-col-2">
+          <img src="photo_6_2026-06-15_13-25-43.jpg" alt="Milky Way Dust Lanes" />
+          <div class="gallery-overlay"><span>Milky Way Dust Lanes</span></div>
+        </div>
+        <div class="gallery-slot span-col-2">
+          <img src="photo_7_2026-06-15_13-25-43.jpg" alt="Deep Sky Observation" />
+          <div class="gallery-overlay"><span>Deep Sky Observation</span></div>
+        </div>
+        <div class="gallery-slot span-row-2">
+          <img src="photo_8_2026-06-15_13-25-43.jpg" alt="Star Trails" />
+          <div class="gallery-overlay"><span>Star Trails</span></div>
+        </div>
+        <div class="gallery-slot span-row-2">
+          <img src="photo_9_2026-06-15_13-25-43.jpg" alt="Astrophotography Setup" />
+          <div class="gallery-overlay"><span>Astrophotography Setup</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Best Members Section -->
+  <section id="best-members">
+    <div class="ripple-container">
+      <div class="ripple-circle"></div>
+      <div class="ripple-circle"></div>
+      <div class="ripple-circle"></div>
+      <div class="ripple-circle"></div>
+    </div>
+    
+    <div class="participants-wrapper">
+      <div class="participants-hero">
+        <div class="participant-stat-card">
+          <span class="stat-icon"><svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></span>
+          <div class="stat-number blue" data-counter="80" data-suffix="">0</div>
+          <div class="stat-label">Active Members</div>
+        </div>
+        <div class="participant-stat-card">
+          <span class="stat-icon"><svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></span>
+          <div class="stat-number purple" data-counter="87" data-suffix="">0</div>
+          <div class="stat-label">Observation Hours</div>
+        </div>
+        <div class="participant-stat-card">
+          <span class="stat-icon"><svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg></span>
+          <div class="stat-number cyan" data-counter="128" data-suffix="">0</div>
+          <div class="stat-label">Image Captured</div>
+        </div>
+      </div>
+      
+      <div class="section-header" style="margin-top: 5rem;">
+        <div class="section-tag">Hall of Fame</div>
+        <h2 class="section-title">Best Members</h2>
+        <p class="section-subtitle">Recognizing the outstanding contributions of our top astrophotographers.</p>
+      </div>
+
+      <div class="best-members-grid">
+        <div class="best-member-card">
+          <div class="member-photo"><img src="photo_1_2026-06-15_13-25-43.jpg" alt="Member 1" /></div>
+          <h3>Ahmed E.</h3>
+          <p>Deep Sky Specialist</p>
+        </div>
+        <div class="best-member-card">
+          <div class="member-photo"><img src="photo_2_2026-06-15_13-25-43.jpg" alt="Member 2" /></div>
+          <h3>Sarah M.</h3>
+          <p>Planetary Imaging</p>
+        </div>
+        <div class="best-member-card">
+          <div class="member-photo"><img src="photo_3_2026-06-15_13-25-43.jpg" alt="Member 3" /></div>
+          <h3>Youssef K.</h3>
+          <p>Milky Way Photography</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footer-glow"></div>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="footer-brand-link">
+            <img src="AstraVale without BG.png" alt="AstraVale" />
+            <span class="footer-brand-name">AstraVale</span>
+          </a>
+          <p>The premier astrophotography workshop by OCT Astronomy Club. Master the night sky and capture the cosmos.</p>
+          <div class="footer-social" style="display: none;">
+          </div>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Workshop</h4>
+          <ul>
+            <li><a href="#curriculum">Curriculum</a></li>
+            <li><a href="#features">What You'll Learn</a></li>
+            <li><a href="#gallery">Student Gallery</a></li>
+            <li><a href="#enroll">Enrollment</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <ul>
+            <li><a href="mailto:info@stemastronomyclub.org" style="word-break: break-all;">info@stemastronomyclub.org</a></li>
+            <li><br />We are always looking for people who share our passion. Reach out anytime!</li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4>OCT Club</h4>
+          <ul>
+            <li><a href="../index.html">Main Website</a></li>
+            <li><a href="../about.html">About Us</a></li>
+            <li><a href="../programs.html">Programs</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <div class="footer-bottom-text">© 2026 AstraVale by OCT Astronomy Club. All rights reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  
+  <script src="js/starfield.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
